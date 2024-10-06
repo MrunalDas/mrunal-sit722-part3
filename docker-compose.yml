@@ -1,0 +1,29 @@
+# Your Solution
+version: '3.8'
+
+services:
+  # Book Catalog Service
+  book_catalog:
+    build:
+      context: ./book_catalog
+      dockerfile: Dockerfile
+    container_name: book_catalog
+    ports:
+      - "9000:9000"
+    environment:
+      - PORT=9000
+      - DATABASE_URL=postgresql://megha_2olk_user:At2l4ZXepu3O8VS6GRgCzlRZpOlxh9Dh@dpg-cs18s1ggph6c73ai3t00-a.oregon-postgres.render.com/megha_2olk?sslmode=disable
+    restart: always
+
+  # Inventory Management Service
+  inventory_management:
+    build:
+      context: ./inventory_management
+      dockerfile: Dockerfile
+    container_name: inventory_management
+    ports:
+      - "9001:9001"
+    environment:
+      - PORT=9001
+      - DATABASE_URL=postgresql://megha_2olk_user:At2l4ZXepu3O8VS6GRgCzlRZpOlxh9Dh@dpg-cs18s1ggph6c73ai3t00-a.oregon-postgres.render.com/megha_2olk?sslmode=disable
+    restart: always
