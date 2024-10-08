@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-# Your Solution
 version: '3.8'
 
 services:
@@ -10,10 +8,10 @@ services:
       dockerfile: Dockerfile
     container_name: book_catalog
     ports:
-      - "9000:9000"
+      - "8000:8000"
     environment:
-      - PORT=9000
-      - DATABASE_URL=postgresql://megha_2olk_user:At2l4ZXepu3O8VS6GRgCzlRZpOlxh9Dh@dpg-cs18s1ggph6c73ai3t00-a.oregon-postgres.render.com/megha_2olk?sslmode=disable
+      - PORT=8000
+      - DATABASE_URL=postgresql://dastask7_user:uGT2aMJmlvbjQCLbajsOYwKTG1B97l0e@dpg-crul5c3tq21c738kod50-a.singapore-postgres.render.com/dastask7?sslmode=disable
     restart: always
 
   # Inventory Management Service
@@ -23,9 +21,8 @@ services:
       dockerfile: Dockerfile
     container_name: inventory_management
     ports:
-      - "9001:9001"
+      - "8001:8001"
     environment:
-      - PORT=9001
-      - DATABASE_URL=postgresql://megha_2olk_user:At2l4ZXepu3O8VS6GRgCzlRZpOlxh9Dh@dpg-cs18s1ggph6c73ai3t00-a.oregon-postgres.render.com/megha_2olk?sslmode=disable
+      - PORT=8001
+      - DATABASE_URL=postgresql://dastask7_user:uGT2aMJmlvbjQCLbajsOYwKTG1B97l0e@dpg-crul5c3tq21c738kod50-a.singapore-postgres.render.com/dastask7?sslmode=disable
     restart: always
-
