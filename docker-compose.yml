@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Your Solution
 version: '3.8'
 
@@ -27,3 +28,4 @@ services:
       - PORT=9001
       - DATABASE_URL=postgresql://megha_2olk_user:At2l4ZXepu3O8VS6GRgCzlRZpOlxh9Dh@dpg-cs18s1ggph6c73ai3t00-a.oregon-postgres.render.com/megha_2olk?sslmode=disable
     restart: always
+
